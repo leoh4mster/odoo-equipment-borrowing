@@ -1,0 +1,377 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* equipment_borrowing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 04:08+0000\n"
+"PO-Revision-Date: 2026-11-25 04:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__active
+msgid "Active"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+msgid "Active Loans"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__applicant_id
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+msgid "Applicant"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Approve"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__approved
+msgid "Approved"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_search
+msgid "Archived"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Borrow Request"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.actions.act_window,name:equipment_borrowing.action_borrow_request
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__request_ids
+#: model:ir.ui.menu,name:equipment_borrowing.menu_borrow_request
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_list
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_form
+msgid "Borrow Requests"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model,name:equipment_borrowing.model_equipment_borrowing_equipment
+msgid "Borrowable Equipment"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__borrowed
+msgid "Borrowed"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_equipment__category__camera
+msgid "Camera"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__category
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_search
+msgid "Category"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.actions.act_window,help:equipment_borrowing.action_borrow_request
+msgid "Create a request to borrow a piece of shared equipment."
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:res.groups,comment:equipment_borrowing.group_equipment_manager
+msgid "Create, edit and archive shared equipment."
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__create_uid
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__create_date
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__description
+msgid "Description"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__display_name
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.actions.act_window,name:equipment_borrowing.action_equipment
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__equipment_id
+#: model:ir.ui.menu,name:equipment_borrowing.menu_equipment
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_form
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_list
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_search
+msgid "Equipment"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model,name:equipment_borrowing.model_equipment_borrowing_request
+msgid "Equipment Borrow Request"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.ui.menu,name:equipment_borrowing.menu_equipment_borrowing_root
+#: model:res.groups.privilege,name:equipment_borrowing.privilege_equipment_borrowing
+msgid "Equipment Borrowing"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__code
+msgid "Equipment Code"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:res.groups,name:equipment_borrowing.group_equipment_manager
+msgid "Equipment Manager"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__name
+msgid "Equipment Name"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.actions.act_window,help:equipment_borrowing.action_equipment
+msgid ""
+"Equipment administrators maintain this list of individually numbered items."
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__id
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__id
+msgid "ID"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_equipment__category__laptop
+msgid "Laptop"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__write_uid
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__write_date
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Mark as Borrowed"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Mark as Returned"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_equipment__category__meeting
+msgid "Meeting Equipment"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+msgid "My Requests"
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "New"
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "New requests must start in draft."
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.actions.act_window,help:equipment_borrowing.action_pending_borrow_request
+msgid "No requests are waiting for approval."
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "Only draft requests can be edited."
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "Only equipment managers can perform this action."
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "Only the applicant can submit this request."
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_equipment__category__other
+msgid "Other"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__pending
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+msgid "Pending Approval"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.actions.act_window,name:equipment_borrowing.action_pending_borrow_request
+#: model:ir.ui.menu,name:equipment_borrowing.menu_pending_approvals
+msgid "Pending Approvals"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__borrow_date
+msgid "Planned Borrow Date"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__return_date
+msgid "Planned Return Date"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_equipment__category__projector
+msgid "Projector"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__reason
+msgid "Reason"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Reject"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__rejected
+msgid "Rejected"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__name
+msgid "Request Number"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__returned
+msgid "Returned"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__state
+msgid "State"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Submit for Approval"
+msgstr ""
+
+#. module: equipment_borrowing
+#: model_terms:ir.actions.act_window,help:equipment_borrowing.action_pending_borrow_request
+msgid "Submitted requests appear here automatically."
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "The borrow request sequence is not configured."
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.constraint,message:equipment_borrowing.constraint_equipment_borrowing_equipment_code_unique
+msgid "The equipment code must be unique."
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "The planned return date cannot be earlier than the borrow date."
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid ""
+"The request is no longer in the required state. Refresh the page and try "
+"again."
+msgstr ""
+
+#. module: equipment_borrowing
+#: model:ir.model.constraint,message:equipment_borrowing.constraint_equipment_borrowing_request_name_unique
+msgid "The request number must be unique."
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "The request number, applicant and state cannot be edited directly."
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+#: model:ir.model.constraint,message:equipment_borrowing.constraint_equipment_borrowing_request_active_equipment_unique
+msgid "This equipment already has an approved or borrowed request."
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid ""
+"This equipment is archived. Choose active equipment or ask an equipment "
+"manager to restore it."
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "This request is being updated. Please try again."
+msgstr ""
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "You can only create requests for yourself."
+msgstr ""

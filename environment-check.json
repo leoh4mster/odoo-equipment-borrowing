@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-11-24T17:37:37.442138+08:00",
+  "odoo_version": "19.0",
+  "login_page": 200,
+  "administrator_authentication": "passed",
+  "language": "zh_CN",
+  "timezone": "Asia/Shanghai",
+  "backend_page": 200,
+  "asset_bundles": [
+    {
+      "url": "/web/assets/147dd74/web.assets_web_print.min.css",
+      "status": 200,
+      "bytes": 857371
+    },
+    {
+      "url": "/web/assets/cd2a27a/web.assets_web.min.css",
+      "status": 200,
+      "bytes": 852561
+    },
+    {
+      "url": "/web/assets/e9e871d/web.assets_web.min.js",
+      "status": 200,
+      "bytes": 4089794
+    }
+  ],
+  "database": "equipment_dev",
+  "database_role": "equipment_odoo",
+  "database_role_is_superuser": false,
+  "core_modules": {
+    "base": "installed",
+    "web": "installed"
+  },
+  "custom_addons_directory": "addons",
+  "custom_addons_loaded_at_startup": true,
+  "result": "passed"
+}

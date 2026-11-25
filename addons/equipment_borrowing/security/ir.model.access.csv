@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_equipment_employee,Equipment employee read,model_equipment_borrowing_equipment,base.group_user,1,0,0,0
+access_equipment_manager,Equipment manager,model_equipment_borrowing_equipment,equipment_borrowing.group_equipment_manager,1,1,1,0
+access_borrow_request_user,Borrow request internal user,model_equipment_borrowing_request,base.group_user,1,1,1,0

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_borrow_request_list" model="ir.ui.view">
+        <field name="name">equipment.borrowing.request.list</field>
+        <field name="model">equipment.borrowing.request</field>
+        <field name="arch" type="xml">
+            <list string="Borrow Requests"
+                  decoration-bf="state == 'pending'"
+                  decoration-warning="state == 'pending'"
+                  decoration-muted="state in ('rejected', 'returned')">
+                <field name="name"/>
+                <field name="equipment_id"/>
+                <field name="applicant_id"/>
+                <field name="borrow_date"/>
+                <field name="return_date"/>
+                <field name="state" widget="badge"
+                       decoration-warning="state == 'pending'"
+                       decoration-success="state == 'approved'"
+                       decoration-info="state == 'borrowed'"
+                       decoration-danger="state == 'rejected'"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_borrow_request_form" model="ir.ui.view">
+        <field name="name">equipment.borrowing.request.form</field>
+        <field name="model">equipment.borrowing.request</field>
+        <field name="arch" type="xml">
+            <form string="Borrow Request">
+                <header>
+                    <button name="action_submit" type="object" string="Submit for Approval"
+                            class="oe_highlight" invisible="state != 'draft' or applicant_id != uid"/>
+                    <button name="action_approve" type="object" string="Approve"
+                            class="oe_highlight" groups="equipment_borrowing.group_equipment_manager"
+                            invisible="state != 'pending'"/>
+                    <button name="action_reject" type="object" string="Reject"
+                            groups="equipment_borrowing.group_equipment_manager" invisible="state != 'pending'"/>
+                    <button name="action_borrow" type="object" string="Mark as Borrowed"
+                            class="oe_highlight" groups="equipment_borrowing.group_equipment_manager"
+                            invisible="state != 'approved'"/>
+                    <button name="action_return" type="object" string="Mark as Returned"
+                            class="oe_highlight" groups="equipment_borrowing.group_equipment_manager"
+                            invisible="state != 'borrowed'"/>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="draft,pending,approved,borrowed,returned"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="equipment_id" options="{'no_create': True}" readonly="state != 'draft'"/>
+                            <field name="applicant_id" options="{'no_create': True, 'no_open': True}"/>
+                        </group>
+                        <group>
+                            <field name="borrow_date" readonly="state != 'draft'"/>
+                            <field name="return_date" readonly="state != 'draft'"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="reason" readonly="state != 'draft'"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_borrow_request_search" model="ir.ui.view">
+        <field name="name">equipment.borrowing.request.search</field>
+        <field name="model">equipment.borrowing.request</field>
+        <field name="arch" type="xml">
+            <search string="Borrow Requests">
+                <field name="name"/>
+                <field name="equipment_id"/>
+                <field name="applicant_id"/>
+                <filter name="my_requests" string="My Requests"
+                        domain="[('applicant_id', '=', uid)]"/>
+                <separator/>
+                <filter name="pending_approval" string="Pending Approval"
+                        domain="[('state', '=', 'pending')]"/>
+                <filter name="active_loans" string="Active Loans"
+                        domain="[('state', 'in', ['approved', 'borrowed'])]"/>
+                <group>
+                    <filter name="group_by_equipment" string="Equipment"
+                            context="{'group_by': 'equipment_id'}"/>
+                    <filter name="group_by_applicant" string="Applicant"
+                            context="{'group_by': 'applicant_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_borrow_request" model="ir.actions.act_window">
+        <field name="name">Borrow Requests</field>
+        <field name="res_model">equipment.borrowing.request</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_borrow_request_search"/>
+        <field name="help" type="html">
+            <p>Create a request to borrow a piece of shared equipment.</p>
+        </field>
+    </record>
+
+    <record id="view_borrow_request_pending_list" model="ir.ui.view">
+        <field name="name">equipment.borrowing.request.pending.list</field>
+        <field name="model">equipment.borrowing.request</field>
+        <field name="inherit_id" ref="view_borrow_request_list"/>
+        <field name="mode">primary</field>
+        <field name="priority">50</field>
+        <field name="arch" type="xml">
+            <xpath expr="/list" position="attributes">
+                <attribute name="create">False</attribute>
+                <attribute name="default_order">id asc</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_borrow_request_pending_form" model="ir.ui.view">
+        <field name="name">equipment.borrowing.request.pending.form</field>
+        <field name="model">equipment.borrowing.request</field>
+        <field name="inherit_id" ref="view_borrow_request_form"/>
+        <field name="mode">primary</field>
+        <field name="priority">50</field>
+        <field name="arch" type="xml">
+            <xpath expr="/form" position="attributes">
+                <attribute name="create">False</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_pending_borrow_request" model="ir.actions.act_window">
+        <field name="name">Pending Approvals</field>
+        <field name="res_model">equipment.borrowing.request</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_borrow_request_search"/>
+        <field name="domain">[('state', '=', 'pending')]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No requests are waiting for approval.</p>
+            <p>Submitted requests appear here automatically.</p>
+        </field>
+    </record>
+
+    <record id="action_pending_borrow_request_list" model="ir.actions.act_window.view">
+        <field name="sequence">1</field>
+        <field name="view_mode">list</field>
+        <field name="view_id" ref="view_borrow_request_pending_list"/>
+        <field name="act_window_id" ref="action_pending_borrow_request"/>
+    </record>
+
+    <record id="action_pending_borrow_request_form" model="ir.actions.act_window.view">
+        <field name="sequence">2</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_borrow_request_pending_form"/>
+        <field name="act_window_id" ref="action_pending_borrow_request"/>
+    </record>
+</odoo>

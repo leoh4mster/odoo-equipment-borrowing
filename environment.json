@@ -1,0 +1,13 @@
+{
+  "odoo_edition": "Community",
+  "odoo_branch": "19.0",
+  "odoo_commit": "4ff91465babd9f88620d78d9db34c75b71fc0006",
+  "source_archive_sha256": "17c9edc827f04a5e4dc3aab51a49d7b713806bee487a85cee9d5722668ca402b",
+  "source_url": "https://codeload.github.com/odoo/odoo/tar.gz/4ff91465babd9f88620d78d9db34c75b71fc0006",
+  "python": "3.12.14",
+  "postgresql": "16.15",
+  "database": "equipment_dev",
+  "database_role": "equipment_odoo",
+  "http_host": "127.0.0.1",
+  "http_port": 8069
+}

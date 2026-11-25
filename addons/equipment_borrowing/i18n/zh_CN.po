@@ -1,0 +1,378 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* equipment_borrowing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 04:08+0000\n"
+"PO-Revision-Date: 2026-11-25 04:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: Simplified Chinese\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__active
+msgid "Active"
+msgstr "启用"
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+msgid "Active Loans"
+msgstr "占用中的申请"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__applicant_id
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+msgid "Applicant"
+msgstr "申请人"
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Approve"
+msgstr "批准"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__approved
+msgid "Approved"
+msgstr "已批准"
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_search
+msgid "Archived"
+msgstr "已归档"
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Borrow Request"
+msgstr "借用申请"
+
+#. module: equipment_borrowing
+#: model:ir.actions.act_window,name:equipment_borrowing.action_borrow_request
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__request_ids
+#: model:ir.ui.menu,name:equipment_borrowing.menu_borrow_request
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_list
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_form
+msgid "Borrow Requests"
+msgstr "借用申请"
+
+#. module: equipment_borrowing
+#: model:ir.model,name:equipment_borrowing.model_equipment_borrowing_equipment
+msgid "Borrowable Equipment"
+msgstr "可借用设备"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__borrowed
+msgid "Borrowed"
+msgstr "已借出"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_equipment__category__camera
+msgid "Camera"
+msgstr "摄像机"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__category
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_search
+msgid "Category"
+msgstr "设备类别"
+
+#. module: equipment_borrowing
+#: model_terms:ir.actions.act_window,help:equipment_borrowing.action_borrow_request
+msgid "Create a request to borrow a piece of shared equipment."
+msgstr "创建申请，借用一台共享设备。"
+
+#. module: equipment_borrowing
+#: model:res.groups,comment:equipment_borrowing.group_equipment_manager
+msgid "Create, edit and archive shared equipment."
+msgstr "创建、编辑和归档共享设备。"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__create_uid
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__create_uid
+msgid "Created by"
+msgstr "创建人"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__create_date
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__create_date
+msgid "Created on"
+msgstr "创建时间"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__description
+msgid "Description"
+msgstr "设备描述"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__display_name
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__draft
+msgid "Draft"
+msgstr "草稿"
+
+#. module: equipment_borrowing
+#: model:ir.actions.act_window,name:equipment_borrowing.action_equipment
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__equipment_id
+#: model:ir.ui.menu,name:equipment_borrowing.menu_equipment
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_form
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_list
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_equipment_search
+msgid "Equipment"
+msgstr "设备"
+
+#. module: equipment_borrowing
+#: model:ir.model,name:equipment_borrowing.model_equipment_borrowing_request
+msgid "Equipment Borrow Request"
+msgstr "设备借用申请"
+
+#. module: equipment_borrowing
+#: model:ir.ui.menu,name:equipment_borrowing.menu_equipment_borrowing_root
+#: model:res.groups.privilege,name:equipment_borrowing.privilege_equipment_borrowing
+msgid "Equipment Borrowing"
+msgstr "设备借用管理"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__code
+msgid "Equipment Code"
+msgstr "设备编号"
+
+#. module: equipment_borrowing
+#: model:res.groups,name:equipment_borrowing.group_equipment_manager
+msgid "Equipment Manager"
+msgstr "设备管理员"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__name
+msgid "Equipment Name"
+msgstr "设备名称"
+
+#. module: equipment_borrowing
+#: model_terms:ir.actions.act_window,help:equipment_borrowing.action_equipment
+msgid ""
+"Equipment administrators maintain this list of individually numbered items."
+msgstr "设备管理员在此维护设备，每台设备使用独立编号。"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__id
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__id
+msgid "ID"
+msgstr "ID"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_equipment__category__laptop
+msgid "Laptop"
+msgstr "笔记本电脑"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__write_uid
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__write_uid
+msgid "Last Updated by"
+msgstr "最后更新人"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_equipment__write_date
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Mark as Borrowed"
+msgstr "确认借出"
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Mark as Returned"
+msgstr "确认归还"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_equipment__category__meeting
+msgid "Meeting Equipment"
+msgstr "会议设备"
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+msgid "My Requests"
+msgstr "我的申请"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "New"
+msgstr "新建"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "New requests must start in draft."
+msgstr "新申请必须从草稿状态开始。"
+
+#. module: equipment_borrowing
+#: model_terms:ir.actions.act_window,help:equipment_borrowing.action_pending_borrow_request
+msgid "No requests are waiting for approval."
+msgstr "目前没有待审批的申请。"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "Only draft requests can be edited."
+msgstr "只有草稿状态的申请可以编辑。"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "Only equipment managers can perform this action."
+msgstr "只有设备管理员可以执行此操作。"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "Only the applicant can submit this request."
+msgstr "只有申请人本人可以提交此申请。"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_equipment__category__other
+msgid "Other"
+msgstr "其他"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__pending
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_search
+msgid "Pending Approval"
+msgstr "待审批"
+
+#. module: equipment_borrowing
+#: model:ir.actions.act_window,name:equipment_borrowing.action_pending_borrow_request
+#: model:ir.ui.menu,name:equipment_borrowing.menu_pending_approvals
+msgid "Pending Approvals"
+msgstr "待审批"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__borrow_date
+msgid "Planned Borrow Date"
+msgstr "计划借用日期"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__return_date
+msgid "Planned Return Date"
+msgstr "计划归还日期"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_equipment__category__projector
+msgid "Projector"
+msgstr "投影仪"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__reason
+msgid "Reason"
+msgstr "借用理由"
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Reject"
+msgstr "拒绝"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__rejected
+msgid "Rejected"
+msgstr "已拒绝"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__name
+msgid "Request Number"
+msgstr "申请编号"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields.selection,name:equipment_borrowing.selection__equipment_borrowing_request__state__returned
+msgid "Returned"
+msgstr "已归还"
+
+#. module: equipment_borrowing
+#: model:ir.model.fields,field_description:equipment_borrowing.field_equipment_borrowing_request__state
+msgid "State"
+msgstr "状态"
+
+#. module: equipment_borrowing
+#: model_terms:ir.ui.view,arch_db:equipment_borrowing.view_borrow_request_form
+msgid "Submit for Approval"
+msgstr "提交审批"
+
+#. module: equipment_borrowing
+#: model_terms:ir.actions.act_window,help:equipment_borrowing.action_pending_borrow_request
+msgid "Submitted requests appear here automatically."
+msgstr "提交审批后的申请会自动显示在这里。"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "The borrow request sequence is not configured."
+msgstr "尚未配置借用申请的编号规则，请联系管理员。"
+
+#. module: equipment_borrowing
+#: model:ir.model.constraint,message:equipment_borrowing.constraint_equipment_borrowing_equipment_code_unique
+msgid "The equipment code must be unique."
+msgstr "设备编号已存在，请使用其他编号。"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "The planned return date cannot be earlier than the borrow date."
+msgstr "计划归还日期不能早于借用日期。"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid ""
+"The request is no longer in the required state. Refresh the page and try "
+"again."
+msgstr "申请状态已发生变化，请刷新页面后重试。"
+
+#. module: equipment_borrowing
+#: model:ir.model.constraint,message:equipment_borrowing.constraint_equipment_borrowing_request_name_unique
+msgid "The request number must be unique."
+msgstr "申请编号必须唯一。"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "The request number, applicant and state cannot be edited directly."
+msgstr "申请编号、申请人和状态不能直接修改。"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+#: model:ir.model.constraint,message:equipment_borrowing.constraint_equipment_borrowing_request_active_equipment_unique
+msgid "This equipment already has an approved or borrowed request."
+msgstr "此设备已有已批准或已借出的申请，请等待归还后再批准。"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid ""
+"This equipment is archived. Choose active equipment or ask an equipment "
+"manager to restore it."
+msgstr "此设备已归档，请选择启用的设备，或联系设备管理员恢复此设备。"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "This request is being updated. Please try again."
+msgstr "此申请正在更新，请稍后重试。"
+
+#. module: equipment_borrowing
+#. odoo-python
+#: code:addons/equipment_borrowing/models/borrow_request.py:0
+msgid "You can only create requests for yourself."
+msgstr "只能为自己创建借用申请。"

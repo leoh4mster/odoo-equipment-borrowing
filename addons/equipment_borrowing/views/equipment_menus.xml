@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_equipment_borrowing_root" name="Equipment Borrowing"
+              sequence="25" groups="base.group_user"/>
+    <menuitem id="menu_pending_approvals" name="Pending Approvals"
+              parent="menu_equipment_borrowing_root" action="action_pending_borrow_request"
+              groups="equipment_borrowing.group_equipment_manager" sequence="5"/>
+    <menuitem id="menu_equipment" name="Equipment"
+              parent="menu_equipment_borrowing_root" action="action_equipment"
+              sequence="10"/>
+    <menuitem id="menu_borrow_request" name="Borrow Requests"
+              parent="menu_equipment_borrowing_root" action="action_borrow_request"
+              sequence="20"/>
+</odoo>

@@ -1,0 +1,18 @@
+[options]
+; Replace every CHANGE_ME and /ABSOLUTE_PATH value before starting Odoo.
+; This template is for a separate local review instance, not the current dev.sh instance.
+admin_passwd = CHANGE_ME_DATABASE_MANAGER_PASSWORD
+db_host = 127.0.0.1
+db_port = 5432
+db_user = equipment_review_role
+db_password = CHANGE_ME_POSTGRESQL_ROLE_PASSWORD
+dbfilter = ^equipment_review$
+; Keep database management available during initial creation.
+list_db = True
+addons_path = /ABSOLUTE_PATH/odoo/odoo/addons,/ABSOLUTE_PATH/odoo/addons,/ABSOLUTE_PATH/equipment-borrowing/addons
+data_dir = /ABSOLUTE_PATH/equipment-borrowing/local/odoo-review-data
+logfile = /ABSOLUTE_PATH/equipment-borrowing/local/odoo-review.log
+http_interface = 127.0.0.1
+http_port = 8070
+workers = 0
+max_cron_threads = 0

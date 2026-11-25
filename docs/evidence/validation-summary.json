@@ -1,0 +1,112 @@
+{
+  "prepared_at": "2026-11-25T12:25:18.466745+08:00",
+  "module": {
+    "name": "equipment_borrowing",
+    "version": "19.0.1.5.0",
+    "license": "LGPL-3"
+  },
+  "environment": {
+    "odoo_edition": "Community",
+    "odoo_branch": "19.0",
+    "odoo_commit": "4ff91465babd9f88620d78d9db34c75b71fc0006",
+    "source_archive_sha256": "17c9edc827f04a5e4dc3aab51a49d7b713806bee487a85cee9d5722668ca402b",
+    "source_url": "https://codeload.github.com/odoo/odoo/tar.gz/4ff91465babd9f88620d78d9db34c75b71fc0006",
+    "python": "3.12.14",
+    "postgresql": "16.15",
+    "http_host": "127.0.0.1",
+    "http_port": 8069
+  },
+  "module_tests": {
+    "database": "equipment_module_test_b5418cda",
+    "exit_code": 0,
+    "test_count": 44,
+    "failed": 0,
+    "errors": 0,
+    "test_files": {
+      "test_borrow_workflow.py": 16,
+      "test_equipment.py": 9,
+      "test_borrow_request.py": 19
+    },
+    "odoo_summary_line": "2026-11-25 04:16:14,531 80210 INFO equipment_module_test_b5418cda odoo.tests.result: 0 failed, 0 error(s) of 44 tests when loading database 'equipment_module_test_b5418cda' "
+  },
+  "concurrency": {
+    "checked_at": "2026-11-25T04:23:44.713175+00:00",
+    "module_version": "19.0.1.5.0",
+    "database": "equipment_module_test_b5418cda",
+    "independent_transactions": 2,
+    "outcomes": [
+      {
+        "request_id": 42,
+        "manager_id": 13,
+        "result": "blocked_by_unique_index"
+      },
+      {
+        "request_id": 43,
+        "manager_id": 14,
+        "result": "approved"
+      }
+    ],
+    "active_requests_after_race": 1,
+    "reapproval_after_return": "passed",
+    "result": "passed"
+  },
+  "localization": {
+    "module_version": "19.0.1.5.0",
+    "translated_terms": 64,
+    "languages_checked": [
+      "zh_CN",
+      "en_US"
+    ],
+    "menus_fields_selections_buttons_filters_help_and_new_placeholder": "passed",
+    "sql_constraint_messages_in_both_languages": "passed",
+    "pending_queue_domain_badges_and_role_visibility": "passed",
+    "business_error_checks": [
+      {
+        "source": "Only equipment managers can perform this action.",
+        "language": "zh_CN",
+        "result": "passed"
+      },
+      {
+        "source": "Only equipment managers can perform this action.",
+        "language": "en_US",
+        "result": "passed"
+      },
+      {
+        "source": "The request number, applicant and state cannot be edited directly.",
+        "language": "zh_CN",
+        "result": "passed"
+      },
+      {
+        "source": "The request number, applicant and state cannot be edited directly.",
+        "language": "en_US",
+        "result": "passed"
+      },
+      {
+        "source": "The equipment code must be unique.",
+        "language": "zh_CN",
+        "result": "passed"
+      }
+    ],
+    "business_records_unchanged": {
+      "equipment.borrowing.equipment": 3,
+      "equipment.borrowing.request": 8
+    },
+    "result": "passed",
+    "recorded_at": "2026-11-25T12:12:17.674963+08:00",
+    "verification_method": "Authenticated HTTP view metadata, translated fields and representative business errors"
+  },
+  "historical_role_http_check": {
+    "checked_at": "2026-11-24T20:36:32.798108+08:00",
+    "module_version": "19.0.1.3.0",
+    "separate_authenticated_accounts": 3,
+    "checks_passed": 39,
+    "rerun_on_current_version": false
+  },
+  "visual_evidence": {
+    "browser_screenshots_included": false,
+    "manual_confirmations": [
+      "Approval workflow",
+      "Pending approval highlighting and queue"
+    ]
+  }
+}

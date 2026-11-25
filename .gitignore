@@ -1,0 +1,7 @@
+local/
+personal-notes/
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+*.log
